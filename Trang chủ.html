@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./Trang chủ_files/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./Trang chủ_files/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+    </script>
+    <link rel="stylesheet" href="./Trang chủ_files/category.css">
+    <div id="category">
+        <div id="category_heading">
+            <div id="avatar">
+                <img src="./Trang chủ_files/gzsqz9daqpanplsesvet.webp" alt="">
+            </div>
+            <div id="info">
+                <span id="info_title">
+                    Lê Văn Dũng
+                </span>
+                <span id="info_right">
+
+                    Quản trị viên
+
+                </span>
+            </div>
+        </div>
+        <div id="category_body">
+            <div class="category_items home">
+                <a href="http://localhost:3000/home" class="title">
+                    Trang chủ
+                </a>
+            </div>
+            <div class="category_items general">
+                <a href="http://localhost:3000/admin/category/general" class="title">
+                    Tổng quan
+                </a>
+            </div>
+            <div class="category_items general">
+                <a class="title">
+                    Nhân viên
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="list hide">
+                    <li class="index">
+                        <a href="http://localhost:3000/admin/category/employee/add-employee" class="index_label">Thêm
+                            nhân viên</a>
+                    </li>
+                    <li class="index">
+                        <a href="http://localhost:3000/admin/category/employee/employee-list" class="index_label">Danh
+                            sách nhân viên</a>
+                    </li>
+                    <li class="index">
+                        <a href="http://localhost:3000/admin/category/employee/employee-account-list"
+                            class="index_label">Danh sách tài khoản</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./Trang chủ_files/category.js"></script>
+
+    <main>
+        <header>
+            <p>This is header</p>
+        </header>
+        <link rel="stylesheet" href="./Trang chủ_files/employee_list.css">
+        <div id="employee_list">
+            <div id="title">
+                <span>Danh sách nhân viên</span>
+            </div>
+            <table>
+                <thead>
+                    <tr class="table_title">
+                        <th id="ordinal">
+                            <span class="title_name">STT</span>
+                        </th>
+                        <th id="employee_code">
+                            <span class="title_name">Mã nhân viên</span>
+                            <i class="fa-solid fa-sort" id="employee_code"></i>
+                        </th>
+                        <th id="avatar">
+                            <span class="title_name">Ảnh</span>
+                        </th>
+                        <th id="name">
+                            <span class="title_name">Tên nhân viên</span>
+                            <i class="fa-solid fa-sort" id="name"></i>
+                        </th>
+                        <th id="gender">
+                            <span class="title_name">Giới tính</span>
+                            <i class="fa-solid fa-sort" id="gender"></i>
+                        </th>
+                        <th id="birthday">
+                            <span class="title_name">Ngày sinh</span>
+                            <i class="fa-solid fa-sort" id="birthday"></i>
+                        </th>
+                        <th id="birthplace">
+                            <span class="title_name">Nơi sinh</span>
+                            <i class="fa-solid fa-sort" id="birthplace"></i>
+                        </th>
+                        <th id="identifier">
+                            <span class="title_name">CMND, CCCD</span>
+                            <i class="fa-solid fa-sort" id="identifier"></i>
+                        </th>
+                        <th id="status">
+                            <span class="title_name">Tình trạng</span>
+                            <i class="fa-solid fa-sort" id="status"></i>
+                        </th>
+                        <th id="view-employee">
+                            <span class="title_name">Xem</span>
+                        </th>
+                        <th id="update-employee">
+                            <span class="title_name">Sửa</span>
+                        </th>
+                        <th id="delete-employee">
+                            <span class="title_name">Xoá</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="body" id="1&quot;">
+                        <td class="body_anable-sorting" id="ordinal">
+                            1
+                        </td>
+                        <td class="body_anable-sorting" id="employee_code">
+                            NV168071163349530
+                        </td>
+                        <td id="avatar">
+                            <img src="./Trang chủ_files/gzsqz9daqpanplsesvet.webp" alt="">
+                        </td>
+                        <td class="body_anable-sorting" id="name">
+                            Lê Văn Dũng
+                        </td>
+                        <td class="body_anable-sorting" id="gender">
+                            Nam
+                        </td>
+                        <td class="body_anable-sorting" id="birthday">
+                            2003-12-11
+                        </td>
+                        <td class="body_anable-sorting" id="birthplace">
+                            Thanh Hoá
+                        </td>
+                        <td class="body_anable-sorting" id="identifier">
+                            038203032575
+                        </td>
+                        <td>
+
+                            <span class="body_anable-sorting status-block working-status" id="status">
+
+                                Đang làm việc
+                            </span>
+                        </td>
+                        <td class="interact-employee-btn view-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/view/642d9fd1ca6e5b04f824f8ca"><i
+                                    class="fa-solid fa-eye"></i></a>
+                        </td>
+                        <td class="interact-employee-btn update-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/update/642d9fd1ca6e5b04f824f8ca"><i
+                                    class="fa-sharp fa-solid fa-pencil"></i></a>
+                        </td>
+                        <td class="interact-employee-btn delete-employee">
+
+                        </td>
+                    </tr>
+
+                    <tr class="body" id="2&quot;">
+                        <td class="body_anable-sorting" id="ordinal">
+                            2
+                        </td>
+                        <td class="body_anable-sorting" id="employee_code">
+                            NV168075274293665
+                        </td>
+                        <td id="avatar">
+                            <img src="./Trang chủ_files/jzganh8o8ftu4h1bddem.jpg" alt="">
+                        </td>
+                        <td class="body_anable-sorting" id="name">
+                            Nguyễn Bá Trung
+                        </td>
+                        <td class="body_anable-sorting" id="gender">
+                            Nam
+                        </td>
+                        <td class="body_anable-sorting" id="birthday">
+                            2003-02-09
+                        </td>
+                        <td class="body_anable-sorting" id="birthplace">
+                            Đồng Nai
+                        </td>
+                        <td class="body_anable-sorting" id="identifier">
+                            038203014123
+                        </td>
+                        <td>
+
+                            <span class="body_anable-sorting status-block working-status" id="status">
+
+                                Đang làm việc
+                            </span>
+                        </td>
+                        <td class="interact-employee-btn view-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/view/642e40667ab054cea9044bd3"><i
+                                    class="fa-solid fa-eye"></i></a>
+                        </td>
+                        <td class="interact-employee-btn update-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/update/642e40667ab054cea9044bd3"><i
+                                    class="fa-sharp fa-solid fa-pencil"></i></a>
+                        </td>
+                        <td class="interact-employee-btn delete-employee">
+
+                            <a id_user="642e40667ab054cea9044bd3"><i class="fa-sharp fa-solid fa-trash"></i></a>
+
+                        </td>
+                    </tr>
+
+                    <tr class="body" id="3&quot;">
+                        <td class="body_anable-sorting" id="ordinal">
+                            3
+                        </td>
+                        <td class="body_anable-sorting" id="employee_code">
+                            NV168075282014756
+                        </td>
+                        <td id="avatar">
+                            <img src="./Trang chủ_files/dhis8hktnzfr2pno5c7h.jpg" alt="">
+                        </td>
+                        <td class="body_anable-sorting" id="name">
+                            Phạm Đỗ Nguyên Chương
+                        </td>
+                        <td class="body_anable-sorting" id="gender">
+                            Nam
+                        </td>
+                        <td class="body_anable-sorting" id="birthday">
+                            2003-09-19
+                        </td>
+                        <td class="body_anable-sorting" id="birthplace">
+                            Kiên Giang
+                        </td>
+                        <td class="body_anable-sorting" id="identifier">
+                            038203032577
+                        </td>
+                        <td>
+
+                            <span class="body_anable-sorting status-block resigned-status" id="status">
+
+                                Đã nghỉ việc
+                            </span>
+                        </td>
+                        <td class="interact-employee-btn view-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/view/642e40b47ab054cea9044bd5"><i
+                                    class="fa-solid fa-eye"></i></a>
+                        </td>
+                        <td class="interact-employee-btn update-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/update/642e40b47ab054cea9044bd5"><i
+                                    class="fa-sharp fa-solid fa-pencil"></i></a>
+                        </td>
+                        <td class="interact-employee-btn delete-employee">
+
+                            <a id_user="642e40b47ab054cea9044bd5"><i class="fa-sharp fa-solid fa-trash"></i></a>
+
+                        </td>
+                    </tr>
+
+                    <tr class="body" id="4&quot;">
+                        <td class="body_anable-sorting" id="ordinal">
+                            4
+                        </td>
+                        <td class="body_anable-sorting" id="employee_code">
+                            NV168079070887443
+                        </td>
+                        <td id="avatar">
+                            <img src="./Trang chủ_files/akz3zlartjlesuh6lrst.png" alt="">
+                        </td>
+                        <td class="body_anable-sorting" id="name">
+                            Trần Đình Toàn
+                        </td>
+                        <td class="body_anable-sorting" id="gender">
+                            Nam
+                        </td>
+                        <td class="body_anable-sorting" id="birthday">
+                            2003-11-19
+                        </td>
+                        <td class="body_anable-sorting" id="birthplace">
+                            Long An
+                        </td>
+                        <td class="body_anable-sorting" id="identifier">
+                            038203012345
+                        </td>
+                        <td>
+
+                            <span class="body_anable-sorting status-block working-status" id="status">
+
+                                Đang làm việc
+                            </span>
+                        </td>
+                        <td class="interact-employee-btn view-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/view/642ed4b4d380e16a663fccf0"><i
+                                    class="fa-solid fa-eye"></i></a>
+                        </td>
+                        <td class="interact-employee-btn update-employee">
+                            <a
+                                href="http://localhost:3000/admin/category/employee/employee-list/update/642ed4b4d380e16a663fccf0"><i
+                                    class="fa-sharp fa-solid fa-pencil"></i></a>
+                        </td>
+                        <td class="interact-employee-btn delete-employee">
+
+                            <a id_user="642ed4b4d380e16a663fccf0"><i class="fa-sharp fa-solid fa-trash"></i></a>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <script src="./Trang chủ_files/employee_list.js"></script>
+        <script src="index.JS"></script>
+        <footer>
+            <p>© Đây là sản phẩm của <a target="_blank" href="https://www.facebook.com/lvd11122003">Team-21-PTITHCM</a>,
+                không re-up dưới bất kỳ hình thức nào</p>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
